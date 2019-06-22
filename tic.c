@@ -14,17 +14,17 @@ bool turn = true;
 // TODO: Remove printf, replace with game functions
 
 void print_state() {
-	printf("\n");
-	for(int i = 0; i < BOARDSIZE; i++) {
+    printf("\n");
+    for(int i = 0; i < BOARDSIZE; i++) {
         printf(SPACING);
         for(int j = 0; j < BOARDSIZE; j++) {
             occupied[i][j] == false 
                 ? printf("_ ") 
                 : printf("%d ", board[i][j]);
-        }
-		printf("\n");
-	}
-	printf("\n");
+         }
+      printf("\n");
+    }
+    printf("\n");
 }
 
 bool full(){
